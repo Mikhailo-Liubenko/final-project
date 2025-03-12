@@ -3,11 +3,1098 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Суші-ресторан</title>
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
-    
+   <header>
+    <img class="logo" src="img/logo.png" alt="" srcset="">
+    <div class="location">
+    <img class="point" src="img/maps-and-flags.png" alt="" srcset="">
+    <p>г.Киев</p>
+    </div>
+    <div class="contact">
+        <img src="img/envelope.png" alt="" srcset="">
+        <p class="email">test@gmail.com</p>
+    </div>
+    <div class="phone">
+        <p class="number">+380 (800) 333 2 222</p>
+        <p class="time">Работаем с 11.00 до 23.00</p>
+    </div>
+    <button class="btn">Обратный звонок</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3> Спершу пройдіть реєстрація</h3>
+          <form>
+              <label for="name">Ім'я:</label>
+              <input type="text" id="name" name="name" required>
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="password">Пароль:</label>
+              <input type="password" id="password" name="password" required>
+  
+              <button type="submit" class="register-btn">Зареєструватися</button>
+          </form>
+      </div>
+  </div>
+   </header>
+   <nav> 
+      <select name="menu" id="menu">
+        <option value="one">Меню</option>
+      </select>
+      <button class="promotion">Акции и скидки</button>
+      <button class="delivery">Доставка и оплата</button>
+      <button class="news">Новости</button>
+      <button class="contacts">Контакти</button>
+      <button class="account">
+        <img class="user" src="img/user.png" alt="" srcset="">
+        Кабинет
+    </button>
+      <button class="basket">
+        <img src="img/cart.png" alt="" srcset="">
+        Корзина
+    </button>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h1 class="slider-text">Счастливые  часы</h1>
+            <p class="slider-time">с 11:00 до 16:00 в будние дни</p>
+            <button class="slider-btn">Подробности</button>
+            <img src="img/slider-img.png" alt="">
+        </div>
+          <div class="swiper-slide">
+            <h1 class="slider-text">Счастливые  часы</h1>
+            <p class="slider-time">с 11:00 до 16:00 в будние дни</p>
+            <button class="slider-btn">Подробности</button>
+            <img src="img/slider-img.png" alt="">
+        </div>
+          <div class="swiper-slide">
+            <h1 class="slider-text">Счастливые  часы</h1>
+            <p class="slider-time">с 11:00 до 16:00 в будние дни</p>
+            <button class="slider-btn">Подробности</button>
+            <img src="img/slider-img.png" alt="">
+        </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+   </nav>
+   <main>
+    <div class="name-one">
+      <img src="img/title.png" alt="" srcset="">
+      <h2>Сети</h2>
+      <img src="img/title_2.png" alt="" srcset="">
+    </div>
+    <div class="swiper mySwiperOne">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/set_0.png" alt="" srcset="">
+          <h3 class="set-1">Сет №10</h3>
+          <p class="kkal">72 шт. | 1560 г. | 1700 Kkal</p>
+          <div class="priceAndNumber">
+            <p>2 050 грн..</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_1.png" alt="" srcset="">
+          <h3 class="set-1">Сет №8</h3>
+          <p class="kkal">24 шт. | 960 г. | 800 Kkal</p>
+          <div class="priceAndNumber">
+            <p>1 590 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_2.png" alt="" srcset="">
+          <h3 class="set-2">Минисет №5</h3>
+          <p class="kkal">14 шт. | 450 г. | 400 Kkal</p>
+          <div class="priceAndNumber">
+            <p>510 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_3.png" alt="" srcset="">
+          <h3 class="set-1">Сет №6</h3>
+          <p class="kkal">16 шт. | 460 г. | 490 Kkal</p>
+          <div class="priceAndNumber">
+            <p>400 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_0.png" alt="" srcset="">
+          <h3 class="set-1">Сет №10</h3>
+          <p class="kkal">72 шт. | 1560 г. | 1700 Kkal</p>
+          <div class="priceAndNumber">
+            <p>2 050 грн..</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_0.png" alt="" srcset="">
+          <h3 class="set-1">Сет №10</h3>
+          <p class="kkal">72 шт. | 1560 г. | 1700 Kkal</p>
+          <div class="priceAndNumber">
+            <p>2 050 грн..</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_0.png" alt="" srcset="">
+          <h3 class="set-1">Сет №10</h3>
+          <p class="kkal">72 шт. | 1560 г. | 1700 Kkal</p>
+          <div class="priceAndNumber">
+            <p>2 050 грн..</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_0.png" alt="" srcset="">
+          <h3 class="set-1">Сет №10</h3>
+          <p class="kkal">72 шт. | 1560 г. | 1700 Kkal</p>
+          <div class="priceAndNumber">
+            <p>2 050 грн..</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/set_0.png" alt="" srcset="">
+          <h3 class="set-1">Сет №10</h3>
+          <p class="kkal">72 шт. | 1560 г. | 1700 Kkal</p>
+          <div class="priceAndNumber">
+            <p>2 050 грн..</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="name-two">
+      <img src="img/title.png" alt="" srcset="">
+      <h2>Роллы</h2>
+      <img src="img/title_2.png" alt="" srcset="">
+    </div>
+    <div class="swiper mySwiperTwo">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 8.png" alt="" srcset="">
+          <h3 class="roll-1">Унаги диру</h3>
+          <p class="kkal">8 шт. | 960 г. | 800 Kkal</p>
+          <div class="priceAndNumber">
+            <p>280 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 9.png" alt="" srcset="">
+          <h3 class="roll-1">Филадельфия</h3>
+          <p class="kkal">8 шт. | 450 г. | 400 Kkal</p>
+          <div class="priceAndNumber">
+            <p>280 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 10.png" alt="" srcset="">
+          <h3 class="roll-1">Мексиканский </h3>
+          <p class="kkal">8 шт. | 460 г. | 490 Kkal</p>
+          <div class="priceAndNumber">
+            <p>290 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="name-three">
+      <img src="img/title.png" alt="" srcset="">
+      <h2>Пицца</h2>
+      <img src="img/title_2.png" alt="" srcset="">
+    </div>
+    <div class="swiper mySwiperThree">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/Цветовой тон_Насыщенность 1.png" alt="" srcset="">
+          <h3 class="roll-1">Баварская</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>480 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 12.png" alt="" srcset="">
+          <h3 class="roll-1">Вегетарианская</h3>
+          <p class="kkal">33 см | 755 г. | 1800 Kkal</p>
+          <div class="priceAndNumber">
+            <p>380 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 13.png" alt="" srcset="">
+          <h3 class="roll-1">Пепперони</h3>
+          <p class="kkal">33 см | 615 г. | 1400 Kkal</p>
+          <div class="priceAndNumber">
+            <p>450 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 14.png" alt="" srcset="">
+          <h3 class="roll-1">Классическая</h3>
+          <p class="kkal">33 см | 590 г. | 1490 Kkal</p>
+          <div class="priceAndNumber">
+            <p>390 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Цветовой тон_Насыщенность 1.png" alt="" srcset="">
+          <h3 class="roll-1">Баварская</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>480 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Цветовой тон_Насыщенность 1.png" alt="" srcset="">
+          <h3 class="roll-1">Баварская</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>480 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Цветовой тон_Насыщенность 1.png" alt="" srcset="">
+          <h3 class="roll-1">Баварская</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>480 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Цветовой тон_Насыщенность 1.png" alt="" srcset="">
+          <h3 class="roll-1">Баварская</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>480 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Цветовой тон_Насыщенность 1.png" alt="" srcset="">
+          <h3 class="roll-1">Баварская</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>480 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="name-four">
+      <img src="img/title.png" alt="" srcset="">
+      <h2>WOK</h2>
+      <img src="img/title_2.png" alt="" srcset="">
+    </div>
+    <div class="swiper mySwiperFour">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/Слой 619.png" alt="" srcset="">
+          <h3 class="roll-1">С говядиной</h3>
+          <p class="kkal">400 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 673.png" alt="" srcset="">
+          <h3 class="roll-1">С курицей</h3>
+          <p class="kkal">400 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>290 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 52.png" alt="" srcset="">
+          <h3 class="roll-1">Морепродуктами</h3>
+          <p class="kkal">400 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 672.png" alt="" srcset="">
+          <h3 class="roll-1">С овощами</h3>
+          <p class="kkal">400 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Слой 619.png" alt="" srcset="">
+          <h3 class="roll-1">С говядиной</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">          <img src="img/Слой 619.png" alt="" srcset="">
+          <h3 class="roll-1">С говядиной</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button></div>
+        <div class="swiper-slide">
+          <img src="img/Слой 619.png" alt="" srcset="">
+          <h3 class="roll-1">С говядиной</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+        </div>
+        <div class="swiper-slide">          <img src="img/Слой 619.png" alt="" srcset="">
+          <h3 class="roll-1">С говядиной</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button></div>
+        <div class="swiper-slide">          <img src="img/Слой 619.png" alt="" srcset="">
+          <h3 class="roll-1">С говядиной</h3>
+          <p class="kkal">33 см | 680 г. | 1350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>430 руб.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <section>
+      <p class="new">Новинки</p>
+      <p class="action">Акции</p>
+      <div class="swiper mySwiperTwo">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+          </div>
+          <div class="swiper-slide"><img src="img/Слой 8.png" alt="" srcset="">
+            <h3 class="roll-1">Унаги диру</h3>
+            <p class="kkal">8 шт. | 960 г. | 800 Kkal</p>
+            <div class="priceAndNumber">
+              <p>280 грн.</p>
+              <div class="number">
+                <button type="pluse">+</button>
+                <p>1</p>
+                <button type="minus">-</button>
+              </div>
+            </div>
+            <button class="buy">
+              В корзина
+              <img src="img/good_cart.png" alt="" srcset="">
+            </button></div>
+          <div class="swiper-slide">
+            <img src="img/Слой 9.png" alt="" srcset="">
+          <h3 class="roll-1">Филадельфия</h3>
+          <p class="kkal">8 шт. | 450 г. | 400 Kkal</p>
+          <div class="priceAndNumber">
+            <p>280 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Слой 10.png" alt="" srcset="">
+          <h3 class="roll-1">Мексиканский </h3>
+          <p class="kkal">8 шт. | 460 г. | 490 Kkal</p>
+          <div class="priceAndNumber">
+            <p>290 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="img/roll_0.png" alt="" srcset="">
+          <h3 class="roll-1">Кунсей батакон</h3>
+          <p class="kkal">8 шт. | 250 г. | 350 Kkal</p>
+          <div class="priceAndNumber">
+            <p>260 грн.</p>
+            <div class="number">
+              <button type="pluse">+</button>
+              <p>1</p>
+              <button type="minus">-</button>
+            </div>
+          </div>
+          <button class="buy">
+            В корзина
+            <img src="img/good_cart.png" alt="" srcset="">
+          </button>
+
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <div class="name-five">
+      <img src="img/title.png" alt="" srcset="">
+      <h2>10 Причин купить в нас</h2>
+      <img src="img/title_2.png" alt="" srcset="">
+    </div>
+    <div class="reasons">
+      <div class="reason-1">
+        <img src="img/kitchen_1.png" alt="" srcset="">
+        <p>100% ручная работа</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/dish_2.png" alt="" srcset="">
+        <p>100% свежие ингредиенты</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/money.png" alt="" srcset="">
+        <p>Самые низкие цены на рынке! (Нет ресторанной наценки)</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/like_4.png" alt="" srcset="">
+        <p>Постоянный контроль качества на всех этапах</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/fish_5.png" alt="" srcset="">
+        <p>100% свежие ингредиенты</p>
+      </div>
+      </div>
+      <div class="reasons_2">
+      <div class="reason-1">
+        <img src="img/rice_6.png" alt="" srcset="">
+        <p>Мы используем только дорогой рис из Японии</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/octopus_7.png" alt="" srcset="">
+        <p>Больше начинки, меньше риса!</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/knife_8.png" alt="" srcset="">
+        <p>Мы не заменяем авокадо огурцом!</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/pizza_9.png" alt="" srcset="">
+        <p>Вся пицца готовится из итальянской муки и Итальянского соуса</p>
+      </div>
+      <div class="reason-1">
+        <img src="img/feather-hand-drawn-outline_10.png" alt="" srcset="">
+        <p>Мы не используем майонез!</p>
+      </div>
+    </div>
+    <div class="name-six">
+      <img src="img/title.png" alt="" srcset="">
+      <h2>Отзови</h2>
+      <img src="img/title_2.png" alt="" srcset="">
+    </div>
+    <div class="feedback">
+      <div class="fb-1">
+        <div class="author">
+          <img src="img/Слой 1517.png" alt="" srcset="">
+          <p class="acc">Надежда Наширбанова</p>
+          
+        </div>
+        <p class="data">
+          5 авг 2017 в 9:58</p>
+        <h4>Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</h4>
+        <img src="img/Слой 1521.png" alt="" srcset="">
+        <div class="reaction">
+          <img src="img/Слой 1522.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="fb-1">
+        <div class="author">
+          <img src="img/Слой 1517.png" alt="" srcset="">
+          <p class="acc">Надежда Наширбанова</p>
+          
+        </div>
+        <p class="data">
+          5 авг 2017 в 9:58</p>
+        <h4>Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</h4>
+        <img src="img/Слой 1521.png" alt="" srcset="">
+        <div class="reaction">
+          <img src="img/Слой 1522.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="fb-1">
+        <div class="author">
+          <img src="img/Слой 1517.png" alt="" srcset="">
+          <p class="acc">Надежда Наширбанова</p>
+          
+        </div>
+        <p class="data">
+          5 авг 2017 в 9:58</p>
+        <h4>Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</h4>
+        <img src="img/Слой 1521.png" alt="" srcset="">
+        <div class="reaction">
+          <img src="img/Слой 1522.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+    <div class="leav-contacts">
+      <img src="img/contact__details.png" alt="" srcset="">
+      <div class="content">
+      <p>Есть вопроси?</p>
+      <h2>Оставте свои контакти</h2>
+      <div class="phoneAndName">
+        <input type="text" name="" id="names" placeholder="Им'я">
+        <input type="tel" name="" id="phones" placeholder="Телефон">
+        <button class="push" type="button">Отправить</button>
+      </div>
+    </div>
+    </div>
+    <article>
+      <div class="name-seven">
+        <img src="img/title.png" alt="" srcset="">
+        <h2>О компании</h2>
+        <img src="img/title_2.png" alt="" srcset="">
+      </div>
+      <div class="info">
+        <p class="company">Заказ и доставка роллов, пиццы и WOK(Вок) в городе Курск</p>
+        <p class="information">Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд. <br> </br>
+
+          С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами. <br> </br>
+          
+          Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись в домашнюю и теплую обстановку! <br> </br>
+          
+          Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся только за ту работу, которую можем выполнить в срок. <br> </br>
+          
+          В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными наполнителями, салаты, горячие закуски и различные напитки. <br> </br>
+          
+          Оформив у нас заказ суши на дом, клиент может выбрать удобный ему способ оплаты: наличными при получении заказа или банковской картой VISA, MasterCard при заполнении специальной формы заказа на сайте или на дому через переносной терминал (заранее сообщив оператору о форме оплаты). <br> </br>
+          
+          Информацию по стоимости доставки и минимальной суммы заказа в отдаленные районы г. Мытищ можно уточнить у оператора по телефону.</p>
+          <img src="img/Карта градиента 7842.png" alt="" srcset="">
+      </div>
+    </article>
+   </main>
+   <footer>
+    <div class="partOne">
+      <p>Суши</p>
+      <p>Гункани</p>
+      <p>Инари</p>
+      <p>Супи</p>
+      <p>Салати</p>
+      <p>Гарячие закуски</p>
+      <p>Десерти</p>
+      <p>Напитки</p>
+      <p>Дополнение</p>
+    </div>
+    <div class="partTwo">
+      <p class="Two">Сеты</p>
+      <p>До 500 руб.</p>
+      <p>До 1000 руб. (для двоих)
+      </p>
+      <p>До 1500 руб (для двоих - троих)
+      </p>
+      <p>До 2000 руб (большая кампания)
+      </p>
+      <p>от 2000 руб (очень большая кампания)</p>
+    </div>
+    <div class="partThree">
+      <p>С угрем</p>
+      <p>Горячие</p>
+      <p>Запеченые</p>
+      <p>Суши</p>
+    </div>
+    <div class="partFour">
+      <p class="Three">Роллы</p>
+      <p>Традиционные/Классические</p>
+      <p>Простые</p>
+      <p>Теплые</p>
+      <p>Запеченые</p>
+      <p>Вегитарианские</p>
+    </div>
+    <div class="partFive">
+      <p class="Four">Вок</p>
+      <p>Яичная</p>
+      <p>Удон</p>
+      <p>Гречневая</p>
+      <p>Стеклянная</p>
+      <p>Рис</p>
+    </div>
+    <div class="partSix">
+      <p class="Five">Пицца</p>
+      <p>Мясная</p>
+      <p>Рыбная</p>
+      <p>Сырная</p>
+      <p>Вегитарианская</p>
+    </div>
+    <p class="firma">МИЮШИ © 2017</p>
+    <p class="accept">Соглашение на обработку персональных данных</p>
+    <div class="media">
+      <img src="img/instagram.png" alt="" srcset="">
+      <img src="img/vk.png" alt="" srcset="">
+      <img src="img/facebook.png" alt="" srcset="">
+    </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
